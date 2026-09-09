@@ -1,0 +1,782 @@
+/* ==================================================
+   RESET
+================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+
+    background: #0a1713;
+    color: #d9bd78;
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    line-height: 1.6;
+
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease;
+}
+
+
+/* ==================================================
+   THEMES
+================================================== */
+
+
+/* --------------------------------------------------
+   LIGHT
+-------------------------------------------------- */
+
+[data-theme="light"] body {
+    background: #f4f2ed;
+    color: #20201e;
+}
+
+
+[data-theme="light"] nav a {
+    color: #66635d;
+}
+
+
+[data-theme="light"] nav a:hover {
+    color: #20201e;
+}
+
+
+[data-theme="light"] .eyebrow,
+[data-theme="light"] .section-label {
+    color: #77736b;
+}
+
+
+[data-theme="light"] .intro {
+    color: #55524d;
+}
+
+
+[data-theme="light"] .section,
+[data-theme="light"] .project {
+    border-color: #d7d3cb;
+}
+
+
+[data-theme="light"] .project p {
+    color: #5c5953;
+}
+
+
+[data-theme="light"] .project-top span,
+[data-theme="light"] .section-intro {
+    color: #77736b;
+}
+
+
+[data-theme="light"] .tags span {
+    border-color: #cfcbc3;
+    color: #66635d;
+}
+
+
+[data-theme="light"] .links a,
+[data-theme="light"] .big-link,
+[data-theme="light"] .project a,
+[data-theme="light"] .all-projects {
+    color: #20201e;
+    border-color: #aaa69d;
+}
+
+
+[data-theme="light"] .links a:hover,
+[data-theme="light"] .big-link:hover,
+[data-theme="light"] .project a:hover,
+[data-theme="light"] .all-projects:hover {
+    border-color: #20201e;
+}
+
+
+[data-theme="light"] footer {
+    color: #8a867e;
+}
+
+
+[data-theme="light"] .theme-toggle {
+    border-color: #cfcbc3;
+    color: #55524d;
+}
+
+
+[data-theme="light"] .theme-toggle:hover {
+    background: #e9e6df;
+}
+
+
+
+/* --------------------------------------------------
+   DARK
+-------------------------------------------------- */
+
+[data-theme="dark"] body {
+    background: #171715;
+    color: #e7e4dd;
+}
+
+
+[data-theme="dark"] nav a {
+    color: #aaa69d;
+}
+
+
+[data-theme="dark"] nav a:hover {
+    color: #e7e4dd;
+}
+
+
+[data-theme="dark"] .eyebrow,
+[data-theme="dark"] .section-label {
+    color: #99958d;
+}
+
+
+[data-theme="dark"] .intro {
+    color: #b8b4ac;
+}
+
+
+[data-theme="dark"] .section,
+[data-theme="dark"] .project {
+    border-color: #34332f;
+}
+
+
+[data-theme="dark"] .project p {
+    color: #b8b4ac;
+}
+
+
+[data-theme="dark"] .project-top span,
+[data-theme="dark"] .section-intro {
+    color: #99958d;
+}
+
+
+[data-theme="dark"] .tags span {
+    border-color: #3b3a35;
+    color: #aaa69d;
+}
+
+
+[data-theme="dark"] .links a,
+[data-theme="dark"] .big-link,
+[data-theme="dark"] .project a,
+[data-theme="dark"] .all-projects {
+    color: #e7e4dd;
+    border-color: #55524c;
+}
+
+
+[data-theme="dark"] .links a:hover,
+[data-theme="dark"] .big-link:hover,
+[data-theme="dark"] .project a:hover,
+[data-theme="dark"] .all-projects:hover {
+    border-color: #e7e4dd;
+}
+
+
+[data-theme="dark"] footer {
+    color: #77746d;
+}
+
+
+[data-theme="dark"] .theme-toggle {
+    border-color: #484640;
+    color: #d5d1c8;
+}
+
+
+[data-theme="dark"] .theme-toggle:hover {
+    background: #24231f;
+}
+
+
+
+/* --------------------------------------------------
+   BRONZE
+   Deep green + warm gold
+-------------------------------------------------- */
+
+[data-theme="bronze"] body {
+    background: #0a1713;
+    color: #d9bd78;
+}
+
+
+[data-theme="bronze"] nav a {
+    color: #8f896f;
+}
+
+
+[data-theme="bronze"] nav a:hover {
+    color: #d9bd78;
+}
+
+
+[data-theme="bronze"] .eyebrow,
+[data-theme="bronze"] .section-label {
+    color: #827b62;
+}
+
+
+[data-theme="bronze"] .intro {
+    color: #bcae87;
+}
+
+
+[data-theme="bronze"] .section,
+[data-theme="bronze"] .project {
+    border-color: #263b33;
+}
+
+
+[data-theme="bronze"] .project p {
+    color: #ada484;
+}
+
+
+[data-theme="bronze"] .project-top span,
+[data-theme="bronze"] .section-intro {
+    color: #827b62;
+}
+
+
+[data-theme="bronze"] .tags span {
+    border-color: #354a40;
+    color: #a99e78;
+}
+
+
+[data-theme="bronze"] .links a,
+[data-theme="bronze"] .big-link,
+[data-theme="bronze"] .project a,
+[data-theme="bronze"] .all-projects {
+    color: #d2b66f;
+    border-color: #62573b;
+}
+
+
+[data-theme="bronze"] .links a:hover,
+[data-theme="bronze"] .big-link:hover,
+[data-theme="bronze"] .project a:hover,
+[data-theme="bronze"] .all-projects:hover {
+    color: #e5cc8c;
+    border-color: #d2b66f;
+}
+
+
+[data-theme="bronze"] footer {
+    color: #68634f;
+}
+
+
+[data-theme="bronze"] .theme-toggle {
+    border-color: #40574b;
+    color: #d2b66f;
+}
+
+
+[data-theme="bronze"] .theme-toggle:hover {
+    background: #11221c;
+}
+
+
+
+/* ==================================================
+   HEADER
+================================================== */
+
+.site-header {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 28px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header-space {
+    width: 40px;
+}
+
+
+nav {
+    display: flex;
+
+    align-items: center;
+
+    gap: 26px;
+}
+
+
+nav a {
+    color: #66635d;
+
+    text-decoration: none;
+
+    font-family: monospace;
+
+    font-size: 0.82rem;
+
+    transition:
+        color 0.2s ease;
+}
+
+
+nav a:hover {
+    color: #20201e;
+}
+
+
+
+/* ==================================================
+   THEME BUTTON
+================================================== */
+
+.theme-toggle {
+    width: 30px;
+    height: 30px;
+
+    margin-left: 8px;
+
+    padding: 0;
+
+    border: 1px solid #40574b;
+    border-radius: 50%;
+
+    background: transparent;
+
+    color: #d2b66f;
+
+    font-family: sans-serif;
+
+    font-size: 0.9rem;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease;
+}
+
+
+.theme-toggle:hover {
+    background: #11221c;
+}
+
+
+
+/* ==================================================
+   MAIN
+================================================== */
+
+main {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 0 28px;
+}
+
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.hero {
+    min-height: 68vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    max-width: 900px;
+
+    padding: 70px 0;
+}
+
+
+h1 {
+    margin: 0;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: clamp(3.5rem, 8vw, 7rem);
+
+    font-weight: 400;
+
+    line-height: 0.95;
+
+    letter-spacing: -0.045em;
+}
+
+
+.intro {
+    max-width: 760px;
+
+    margin: 30px 0 0;
+
+    color: #55524d;
+
+    font-size: 1.18rem;
+}
+
+
+.hero .intro + .intro {
+    margin-top: 18px;
+}
+
+
+.links {
+    display: flex;
+
+    gap: 24px;
+
+    margin-top: 30px;
+}
+
+
+.links a,
+.big-link,
+.project a,
+.all-projects {
+    color: #20201e;
+
+    text-decoration: none;
+
+    font-family: monospace;
+
+    border-bottom: 1px solid #aaa69d;
+
+    padding-bottom: 2px;
+
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.links a:hover,
+.big-link:hover,
+.project a:hover,
+.all-projects:hover {
+    border-bottom-color: #20201e;
+}
+
+
+
+/* ==================================================
+   SECTIONS
+================================================== */
+
+.section {
+    display: grid;
+
+    grid-template-columns: 210px 1fr;
+
+    gap: 60px;
+
+    padding: 90px 0;
+
+    border-top: 1px solid #d7d3cb;
+}
+
+
+.section-label {
+    color: #77736b;
+
+    font-family: monospace;
+
+    font-size: 0.8rem;
+}
+
+
+.section-content {
+    max-width: 760px;
+}
+
+
+.section-content p {
+    margin-top: 0;
+
+    margin-bottom: 24px;
+}
+
+
+.section-content h2 {
+    margin: 0 0 24px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 2rem;
+
+    font-weight: 400;
+
+    line-height: 1.15;
+}
+
+
+
+/* ==================================================
+   PROJECT INTRO
+================================================== */
+
+.section-heading {
+    max-width: 700px;
+
+    margin-bottom: 16px !important;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 1.9rem !important;
+
+    font-weight: 500 !important;
+
+    line-height: 1.25 !important;
+}
+
+
+.section-intro {
+    color: #77736b;
+
+    margin-bottom: 40px !important;
+}
+
+
+
+/* ==================================================
+   RESEARCH TAGS
+================================================== */
+
+.tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 30px;
+}
+
+
+.tags span {
+    padding: 5px 9px;
+
+    border: 1px solid #cfcbc3;
+
+    color: #66635d;
+
+    font-family: monospace;
+
+    font-size: 0.75rem;
+}
+
+
+
+/* ==================================================
+   PROJECTS
+================================================== */
+
+.project {
+    padding: 30px 0;
+
+    border-top: 1px solid #d7d3cb;
+}
+
+
+.project:first-of-type {
+    margin-top: 10px;
+}
+
+
+.project-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: baseline;
+
+    gap: 20px;
+}
+
+
+.project h3 {
+    margin: 0;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 1.5rem;
+
+    font-weight: 400;
+}
+
+
+.project-top span {
+    color: #77736b;
+
+    font-family: monospace;
+
+    font-size: 0.75rem;
+}
+
+
+.project p {
+    margin: 12px 0 16px;
+
+    color: #5c5953;
+}
+
+
+.all-projects {
+    display: inline-block;
+
+    margin-top: 30px;
+}
+
+
+
+/* ==================================================
+   SETUP
+================================================== */
+
+.big-link {
+    display: inline-block;
+
+    margin-top: 4px;
+
+    font-size: 1.1rem;
+}
+
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 30px 28px 60px;
+
+    color: #8a867e;
+
+    font-family: monospace;
+
+    font-size: 0.72rem;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 700px) {
+
+    .site-header {
+        padding-top: 20px;
+    }
+
+
+    nav {
+        gap: 12px;
+    }
+
+
+    nav a {
+        font-size: 0.72rem;
+    }
+
+
+    .theme-toggle {
+        width: 27px;
+        height: 27px;
+    }
+
+
+    .hero {
+        min-height: 70vh;
+
+        padding: 50px 0;
+    }
+
+
+    h1 {
+        font-size: 4rem;
+    }
+
+
+    .intro {
+        font-size: 1.08rem;
+    }
+
+
+    .section {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        padding: 75px 0;
+    }
+
+
+    .section-heading {
+        font-size: 1.6rem !important;
+    }
+
+
+    footer {
+        flex-direction: column;
+    }
+
+}

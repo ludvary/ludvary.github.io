@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Personal website of Krishna Das Nair, a physics PhD student working in computational statistical mechanics.">
+
+    <title>Krishna Das Nair</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <!-- ==============================================
+         HEADER
+    =============================================== -->
+
+    <header class="site-header">
+
+        <div class="header-space"></div>
+
+        <nav>
+
+            <a href="#about">about</a>
+
+            <a href="#research">research</a>
+
+            <a href="#projects">projects</a>
+
+            <a href="#setup">setup</a>
+
+            <button id="theme-toggle"
+                    class="theme-toggle"
+                    aria-label="Change colour theme"
+                    title="Change colour theme">
+                ✦
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- ==========================================
+             HERO
+        =========================================== -->
+
+        <section class="hero">
+
+            <h1>
+                Krishna Das Nair
+            </h1>
+
+
+            <p class="intro">
+
+                I'm a physics PhD student at JNCASR, Bangalore,
+                working in computational statistical mechanics.
+                My research interests include phase transitions,
+                critical phenomena, aging and ordering kinetics,
+                particularly in systems with long-range interactions.
+
+            </p>
+
+
+            <p class="intro">
+
+                I spend a lot of my time thinking about computation,
+                from writing scientific code and running numerical
+                simulations to understanding what happens underneath
+                the abstractions I use every day. I mostly work with
+                C++ and Julia, and I have a particular interest in
+                writing code that makes good use of the hardware it
+                runs on.
+
+            </p>
+
+
+            <div class="links">
+
+                <a href="https://github.com/ludvary"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    GitHub ↗
+                </a>
+
+                <a href="#projects">
+                    Projects ↓
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             ABOUT
+        =========================================== -->
+
+        <section id="about" class="section">
+
+            <div class="section-label">
+                • about
+            </div>
+
+
+            <div class="section-content">
+
+                <p>
+
+                    I'm interested in the parts of physics where
+                    computation is not just a tool for getting an
+                    answer, but becomes part of the way you explore
+                    the problem. My work involves numerical simulation
+                    and statistical mechanics, and I'm particularly
+                    interested in phase transitions, critical
+                    phenomena, aging and ordering kinetics in systems
+                    with long-range interactions.
+
+                </p>
+
+
+                <p>
+
+                    Outside of research, I mostly work in C++ and Julia.
+                    I enjoy understanding what sits underneath the
+                    abstractions I use. Abstractions are incredibly
+                    useful most of the time, the whole point is that
+                    you don't need to care about what happens underneath
+                 but I find it satisfying to pull the
+                    layers apart and understand how things actually work.
+
+                </p>
+
+
+                <p>
+
+                    The same goes for performance. I like knowing where
+                    the time and memory are going, what the hardware is
+                    actually doing, and how much can be gained by changing
+                    the way a piece of code is written. Sometimes there
+                    is a good reason to optimise something; sometimes I
+                    just want to see how fast I can make it.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             RESEARCH
+        =========================================== -->
+
+        <section id="research" class="section">
+
+            <div class="section-label">
+                • research
+            </div>
+
+
+            <div class="section-content">
+
+                <h2>
+                    Computational statistical mechanics
+                </h2>
+
+
+                <p>
+
+                    My research focuses on phase transitions and
+                    critical phenomena, with particular interest
+                    in aging and ordering kinetics in systems with
+                    long-range interactions.
+
+                </p>
+
+
+                <p>
+
+                    My current research is ongoing, so I keep this
+                    section focused on the broader physical questions
+                    and computational methods rather than discussing
+                    unpublished results. My work is primarily based
+                    around numerical simulation and the study of
+                    collective behaviour in many-body systems.
+
+                </p>
+
+
+                <div class="tags">
+
+                    <span>phase transitions</span>
+
+                    <span>critical phenomena</span>
+
+                    <span>aging</span>
+
+                    <span>ordering kinetics</span>
+
+                    <span>long-range interactions</span>
+
+                    <span>statistical mechanics</span>
+
+                    <span>numerical simulation</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             HOBBY PROJECTS
+        =========================================== -->
+
+        <section id="projects" class="section">
+
+            <div class="section-label">
+                • hobby projects
+            </div>
+
+
+            <div class="section-content">
+
+                <h2 class="section-heading">
+                    Things I make outside of research.
+                </h2>
+
+
+                <p class="section-intro">
+
+                    A collection of things I've worked on in my free
+                    time, mostly because I found them interesting
+                    enough to spend time on.
+
+                </p>
+
+
+
+                <!-- XY MODEL -->
+
+                <article class="project">
+
+                    <div class="project-top">
+
+                        <h3>
+                            2D XY Model
+                        </h3>
+
+                        <span>
+                            Julia
+                        </span>
+
+                    </div>
+
+
+                    <p>
+
+                        A Monte Carlo study of the two-dimensional
+                        XY model using the Metropolis–Hastings algorithm.
+                        The project looks at quantities including energy,
+                        magnetization, susceptibility and heat capacity
+                        across temperature.
+
+                    </p>
+
+
+                    <a href="https://github.com/ludvary/XY_Model"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        source ↗
+                    </a>
+
+                </article>
+
+
+
+                <!-- ISING MODEL -->
+
+                <article class="project">
+
+                    <div class="project-top">
+
+                        <h3>
+                            Ising Model
+                        </h3>
+
+                        <span>
+                            Julia
+                        </span>
+
+                    </div>
+
+
+                    <p>
+
+                        Monte Carlo simulations of the Ising model,
+                        including equilibrium and one-dimensional
+                        implementations. The project explores the
+                        temperature dependence of quantities such as
+                        energy and magnetization and includes
+                        visualisations of the system approaching
+                        equilibrium.
+
+                    </p>
+
+
+                    <a href="https://github.com/ludvary/Ising-Model"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        source ↗
+                    </a>
+
+                </article>
+
+
+
+                <!-- NATURAL SELECTION -->
+
+                <article class="project">
+
+                    <div class="project-top">
+
+                        <h3>
+                            Natural Selection
+                        </h3>
+
+                        <span>
+                            Julia
+                        </span>
+
+                    </div>
+
+
+                    <p>
+
+                        A small evolutionary simulation in Julia where
+                        a population of creatures moves through a bounded
+                        environment in search of food. Speed can mutate
+                        between generations, successful creatures
+                        reproduce, and age and population size affect
+                        survival. The simulation tracks how population,
+                        speed, age and reproduction change over generations.
+
+                    </p>
+
+
+                    <a href="https://github.com/ludvary/Natural-Selection"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        source ↗
+                    </a>
+
+                </article>
+
+
+
+                <!-- X IDLE EXEC -->
+
+                <article class="project">
+
+                    <div class="project-top">
+
+                        <h3>
+                            x_idle_exec
+                        </h3>
+
+                        <span>
+                            C++ · X11
+                        </span>
+
+                    </div>
+
+
+                    <p>
+
+                        A tiny X11 daemon for running a command after
+                        a period of inactivity. I originally built it
+                        after looking into how xautolock detects idle
+                        time and finding that the core functionality
+                        could be handled directly through
+                        XScreenSaverQueryInfo.
+
+                    </p>
+
+
+                    <a href="https://github.com/ludvary/x_idle_exec"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        source ↗
+                    </a>
+
+                </article>
+
+
+
+                <!-- ROFI PDF OPENER -->
+
+                <article class="project">
+
+                    <div class="project-top">
+
+                        <h3>
+                            rofi-pdf-opener
+                        </h3>
+
+                        <span>
+                            Shell · Rofi
+                        </span>
+
+                    </div>
+
+
+                    <p>
+
+                        A small utility for finding and opening PDFs
+                        through Rofi. It uses fd to search and Zathura
+                        to open them, and is bound to a key so I can
+                        summon a PDF without leaving whatever I'm doing.
+
+                    </p>
+
+
+                    <a href="https://github.com/ludvary/rofi-pdf-opener"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        source ↗
+                    </a>
+
+                </article>
+
+
+
+                <!-- ALL PROJECTS -->
+
+                <a class="all-projects"
+                   href="https://github.com/ludvary?tab=repositories"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    see everything on GitHub ↗
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             SETUP
+        =========================================== -->
+
+        <section id="setup" class="section">
+
+            <div class="section-label">
+                • setup
+            </div>
+
+
+            <div class="section-content">
+
+                <h2>
+                    Fedora + i3
+                </h2>
+
+
+                <p>
+
+                    I like having control over my computers. Linux gives
+                    me the freedom to choose how things work, change
+                    what I don't like, and get out of the way when I
+                    want it to.
+
+                </p>
+
+
+                <p>
+
+                    I daily-drive Fedora with i3 on my laptop and keep
+                    my setup in my dotfiles. Window manager, terminal,
+                    editor, scripts, little utilities. I enjoy putting
+                    the pieces together myself, probably with more
+                    configuration than is necessary.
+
+                </p>
+
+
+                <a href="https://github.com/ludvary/i3-dots"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="big-link">
+
+                    my dotfiles ↗
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             GITHUB
+        =========================================== -->
+
+        <section class="section contact">
+
+            <div class="section-label">
+                • code
+            </div>
+
+
+            <div class="section-content">
+
+                <p>
+                    You can find my code on GitHub.
+                </p>
+
+
+                <div class="links">
+
+                    <a href="https://github.com/ludvary"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        GitHub ↗
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ==============================================
+         FOOTER
+    =============================================== -->
+
+    <footer>
+
+        <p>
+            Overoptimizing is a delightful disease,
+            and I'm happily afflicted.
+        </p>
+
+
+        <p>
+            © 2026 Krishna Das Nair
+        </p>
+
+    </footer>
+
+
+
+    <!-- ==============================================
+         THEME SWITCHER
+    =============================================== -->
+
+    <script>
+
+        const toggle =
+            document.getElementById("theme-toggle");
+
+
+        const themes = [
+            "bronze",
+            "light",
+            "dark"
+        ];
+
+
+        const icons = {
+            bronze: "✦",
+            light: "☼",
+            dark: "☾"
+        };
+
+
+        /*
+         * Bronze is the default theme.
+         */
+
+        const savedTheme =
+            localStorage.getItem("theme");
+
+
+        let currentTheme =
+            themes.includes(savedTheme)
+                ? savedTheme
+                : "bronze";
+
+
+        function setTheme(theme) {
+
+            currentTheme = theme;
+
+
+            document.documentElement.setAttribute(
+                "data-theme",
+                theme
+            );
+
+
+            toggle.textContent =
+                icons[theme];
+
+
+            toggle.setAttribute(
+                "aria-label",
+                `Switch from ${theme} theme`
+            );
+
+
+            localStorage.setItem(
+                "theme",
+                theme
+            );
+
+        }
+
+
+        setTheme(currentTheme);
+
+
+        toggle.addEventListener("click", () => {
+
+            const currentIndex =
+                themes.indexOf(currentTheme);
+
+
+            const nextIndex =
+                (currentIndex + 1) % themes.length;
+
+
+            setTheme(
+                themes[nextIndex]
+            );
+
+        });
+
+    </script>
+
+</body>
+
+</html>
