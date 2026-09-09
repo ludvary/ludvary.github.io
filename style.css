@@ -488,15 +488,28 @@ h1 {
         border-color 0.2s ease;
 }
 
-
 .links a:hover,
 .big-link:hover,
 .project a:hover,
 .all-projects:hover {
-    border-bottom-color: #20201e;
+    border-bottom-color: currentColor;
+}
+
+.project a,
+.all-projects,
+.big-link {
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
 }
 
 
+.project a:hover,
+.all-projects:hover,
+.big-link:hover {
+    transform: translateX(3px);
+}
 
 /* ==================================================
    SECTIONS
@@ -777,6 +790,144 @@ footer {
 
     footer {
         flex-direction: column;
+    }
+
+}
+/* ==================================================
+   SUBTLE ANIMATION
+================================================== */
+
+
+/* --------------------------------------------------
+   Page entrance
+-------------------------------------------------- */
+
+.hero {
+    animation:
+        hero-enter 0.9s ease-out both;
+}
+
+
+@keyframes hero-enter {
+
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* --------------------------------------------------
+   Header entrance
+-------------------------------------------------- */
+
+.site-header {
+    animation:
+        header-enter 0.7s ease-out both;
+}
+
+
+@keyframes header-enter {
+
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* --------------------------------------------------
+   Section reveal
+-------------------------------------------------- */
+
+.section {
+    opacity: 0;
+    transform: translateY(20px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* --------------------------------------------------
+   Project hover
+-------------------------------------------------- */
+
+.project {
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+.project:hover {
+    transform: translateX(6px);
+}
+
+/* --------------------------------------------------
+   Links
+-------------------------------------------------- */
+
+.links a,
+.big-link,
+.project a,
+.all-projects {
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+/* --------------------------------------------------
+   Theme button
+-------------------------------------------------- */
+
+.theme-toggle {
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.25s ease;
+}
+
+
+.theme-toggle:hover {
+    transform: rotate(20deg);
+}
+
+
+/* --------------------------------------------------
+   Respect reduced-motion preferences
+-------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
     }
 
 }
